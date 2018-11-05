@@ -35,7 +35,7 @@ client.on('message', message => {
     client.user.setGame(argresult);
       message.channel.send(`**Done You Have Been Changed The Playing To ${argresult}**✅ `)
   } else 
-     if (message.content === (adminprefix + "dkbotleave")) {
+     if (message.content === (adminprefix + "speedgenbotleave")) {
     message.guild.leave();        
   } else  
   if (message.content.startsWith(adminprefix + 'setwatching')) {
@@ -195,7 +195,7 @@ if(!message.guild.channels.find("name","suggestions")) return message.channel.se
    .setTimestamp()
    .setTitle(` هل أنت متاكد ؟`)
 .setDescription(`Suggestion : **${a8tra7}**`)
-		 .setFooter('DK BOT' , client.user.avatarURL)
+		 .setFooter('Speed Store BOT' , client.user.avatarURL)
 message.channel.sendEmbed(Sure).then(msg => {
     msg.react('❎')
 .then(() => msg.react('✅'))
