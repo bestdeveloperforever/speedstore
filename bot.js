@@ -225,7 +225,7 @@ let NoFilter = (reaction, user) => reaction.emoji.name === '❎' && user.id === 
 msg.delete();
 })
 No.on("collect", r => {
-message.channel.send('تم الغاء اقتراحط بنجاح :white_check_mark: ').then(message => {message.delete(4000)})
+message.channel.send('تم الغاء اقتراحك بنجاح :white_check_mark: ').then(message => {message.delete(4000)})
 msg.delete();
 })
 })
